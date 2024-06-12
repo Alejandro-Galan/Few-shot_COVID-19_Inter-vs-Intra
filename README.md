@@ -28,7 +28,7 @@ Inter and Intra-domain study in few-shot learning scenarios with severe data imb
 
 ## How To Use
 
-To replicate the work, the file [`main_launch_experiments.py`](main_launch_experiments.py). is ready to receive different parameters, each one corresponding to a concrete experiment.
+To replicate the work, execute the file [`main_launch_experiments.py`](main_launch_experiments.py). It is ready to receive different parameters, each one corresponding to a concrete experiment.
 
 The code has been used over a Docker environment. However, the requirements for any other virtual environment can be easily extracted from [`docker/Dockerfile`](docker/Dockerfile).
 
