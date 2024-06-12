@@ -1,6 +1,3 @@
-<p align="center">
-  <a href=""><img src="https://i.imgur.com/Iu7CvC1.png" alt="PRAIG-logo" width="100"></a>
-</p>
 
 <h1 align="center">Few‑shot learning for COVID‑19 chest X‑ray classification with imbalanced data: an inter vs. intra domain study</h1>
 
