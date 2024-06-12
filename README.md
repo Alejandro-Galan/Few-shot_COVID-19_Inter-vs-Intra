@@ -8,9 +8,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.9.0-orange" alt="Gitter">
-  <img src="https://img.shields.io/badge/Tensorflow-%FFFFFF.svg?style=flat&logo=Tensorflow&logoColor=orange&color=white" alt="Tensorflow">
   <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white" alt="PyTorch">
-  <img src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white" alt="Lightning">
   <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=blue" alt="License">
 </p>
 
@@ -25,7 +23,7 @@
 
 ## About
 
-Describe the work.
+Inter and Intra-domain study in few-shot learning scenarios with severe data imbalance based on Siamese neural networks. Tested over three chest X-ray datasets with annotated cases of both positive and negative COVID-19 diagnoses.All datasets are publicly accessible: ChestX-ray can be found at https://nihcc.app.box.com/v/ChestXray-NIHCC, GitHub-COVID at https://github.com/ieee8023/covid-chestxray-dataset, PadChest is available at https://bimcv.cipf.es/bimcv-projects/padchest, and BIMCV-COVID repositories can be accessed through https://bimcv.cipf.es/bimcv-projects/bimcv-covid19.
 
 
 ## How To Use
