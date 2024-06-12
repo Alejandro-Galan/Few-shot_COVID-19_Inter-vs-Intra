@@ -23,7 +23,7 @@
 
 ## About
 
-Inter and Intra-domain study in few-shot learning scenarios with severe data imbalance based on Siamese neural networks. Tested over three chest X-ray datasets with annotated cases of both positive and negative COVID-19 diagnoses.All datasets are publicly accessible: ChestX-ray can be found at https://nihcc.app.box.com/v/ChestXray-NIHCC, GitHub-COVID at [`https://github.com/ieee8023/covid-chestxray-dataset`](https://github.com/ieee8023/covid-chestxray-dataset), PadChest is available at [`https://bimcv.cipf.es/bimcv-projects/padchest`](https://bimcv.cipf.es/bimcv-projects/padchest), and BIMCV-COVID repositories can be accessed through [`https://bimcv.cipf.es/bimcv-projects/bimcv-covid19`](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19).
+Inter and Intra-domain study in few-shot learning scenarios with severe data imbalance based on Siamese neural networks. Tested over three chest X-ray datasets with annotated cases of both positive and negative COVID-19 diagnoses.All datasets are publicly accessible: ChestX-ray can be found at [`https://nihcc.app.box.com/v/ChestXray-NIHCC`](https://nihcc.app.box.com/v/ChestXray-NIHCC), GitHub-COVID at [`https://github.com/ieee8023/covid-chestxray-dataset`](https://github.com/ieee8023/covid-chestxray-dataset), PadChest is available at [`https://bimcv.cipf.es/bimcv-projects/padchest`](https://bimcv.cipf.es/bimcv-projects/padchest), and BIMCV-COVID repositories can be accessed through [`https://bimcv.cipf.es/bimcv-projects/bimcv-covid19`](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19).
 
 
 ## How To Use
