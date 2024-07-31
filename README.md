@@ -33,8 +33,8 @@ The code has been used over a Docker environment. However, the requirements for 
 ## Citations
 
 ```bibtex
-﻿@Article{Galán-Cuenca2024,
-  author={Galán-Cuenca, Alejandro
+﻿@Article{Galan-Cuenca2024,
+  author={Galan-Cuenca, Alejandro
   and Gallego, Antonio Javier
   and Saval-Calvo, Marcelo
   and Pertusa, Antonio},
