@@ -1,14 +1,11 @@
-<p align="center">
-  <a href="https://praig.ua.es/"><img src="https://i.imgur.com/Iu7CvC1.png" alt="PRAIG-logo" width="100"></a>
-</p>
 
-<h1 align="center">Few-Shot Symbol Classification via Self-Supervised Learning and Nearest Neighbor</h1>
+<h1 align="center">Few‑shot learning for COVID‑19 chest X‑ray classification with imbalanced data: an inter vs. intra domain study</h1>
 
-<h4 align="center">Full text available <a href="https://doi.org/10.1016/j.patrec.2023.01.014" target="_blank">here</a>.</h4>
+<h4 align="center">Full text available <a href="https://doi.org/10.1007/s10044-024-01285-w" target="_blank">here</a>.</h4>
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.9.0-orange" alt="Gitter">
-  <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/Tensorflow-%FFFFFF.svg?style=flat&logo=Tensorflow&logoColor=orange&color=white" alt="Tensorflow">
   <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=blue" alt="License">
 </p>
 
@@ -17,84 +14,45 @@
   <a href="#about">About</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#citations">Citations</a> •
-  <a href="#acknowledgments">Acknowledgments</a> •
   <a href="#license">License</a>
 </p>
 
 
 ## About
 
-## Load data example:
-
-If you want to replicate just the load of the data, check "calculate_distances" function in "models/FewShotModels.py"
-
-In that function, all the datasets are loaded without partition sets. 
-
-```
-  ## Load only the training src dataset
-  pretrained_sources = True if Constants["NoSrcDataset"] else pretrained_sources
-
-  # If no validation src paramenter, Xval is empty
-  data_dict = load_supervised_data(ds_name=ds_name, min_occurence=50, all_datasets=False, pretrained_sources=pretrained_sources, boots_iter=0)
-  
-  
-  XTrain, YTrain = data_dict["X_tgt"], data_dict["Y_tgt"]
-```
-"XTrain" and "YTrain" correspond to the whole loaded dataset. 
+Inter and Intra-domain study in few-shot learning scenarios with severe data imbalance based on Siamese neural networks. Tested over four chest X-ray datasets with annotated cases of both positive and negative COVID-19 diagnoses. All datasets are publicly accessible: ChestX-ray can be found at [`https://nihcc.app.box.com/v/ChestXray-NIHCC`](https://nihcc.app.box.com/v/ChestXray-NIHCC), GitHub-COVID at [`https://github.com/ieee8023/covid-chestxray-dataset`](https://github.com/ieee8023/covid-chestxray-dataset), PadChest is available at [`https://bimcv.cipf.es/bimcv-projects/padchest`](https://bimcv.cipf.es/bimcv-projects/padchest), and BIMCV-COVID repositories can be accessed through [`https://bimcv.cipf.es/bimcv-projects/bimcv-covid19`](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19).
 
 
 ## How To Use
 
-To execute an experiment, please execute this line
+To replicate the work, execute the file [`main_launch_experiments.py`](main_launch_experiments.py). It is ready to receive different parameters, each one corresponding to a concrete experiment.
 
-```python3 ./scripts/auto_paralel_exps.sh <experiment_number> <simultaneous_executions>
-```
-
-There are also a few relevant scripts. 
-
-#### Extract the logs into simpler tables:
-
-```python3 logs_csv/filter_logs_csv.py
-```
-
-#### Compare datasets by predictions and generated embeddings:
-
-```python3 scripts/complementary_comp/main_complementary_comparison_methods.py
-```
-
-
+The code has been used over a Docker environment. However, the requirements for any other virtual environment can be easily extracted from [`docker/Dockerfile`](docker/Dockerfile).
 
 
 ## Citations
 
 ```bibtex
-@article{alfaro2023few,
-  title     = {{Few-Shot Symbol Classification via Self-Supervised Learning and Nearest Neighbor}},
-  author    = {Alfaro-Contreras, Mar{\'\i}a and R{\'\i}os-Vila, Antonio and Valero-Mas, Jose J and Calvo-Zaragoza, Jorge},
-  journal   = {{Pattern Recognition Letters}},
-  volume    = {167},
-  pages     = {1--8},
-  year      = {2023},
-  publisher = {Elsevier},
-  doi       = {10.1016/j.patrec.2023.01.014},
+﻿@Article{Galan-Cuenca2024,
+  author={Galan-Cuenca, Alejandro
+  and Gallego, Antonio Javier
+  and Saval-Calvo, Marcelo
+  and Pertusa, Antonio},
+  title={Few-shot learning for COVID-19 chest X-ray classification with imbalanced data: an inter vs. intra domain study},
+  journal={Pattern Analysis and Applications},
+  year={2024},
+  month={Jun},
+  day={11},
+  volume={27},
+  number={3},
+  pages={69},
+  issn={1433-755X},
+  doi={10.1007/s10044-024-01285-w},
+  url={https://doi.org/10.1007/s10044-024-01285-w}
 }
 
-@inproceedings{rios2022few,
-  title     =   {{Few-Shot Music Symbol Classification via Self-Supervised Learning and Nearest Neighbor}},
-  author    =   {R{\'\i}os-Vila, Antonio and Alfaro-Contreras, Mar{\'\i}a and Valero-Mas, Jose J and Calvo-Zaragoza, Jorge},
-  booktitle =   {{Proceedings of the 3rd International Workshop Pattern Recognition for Cultural Heritage}},
-  pages     =   {93--107},
-  year      =   {2022},
-  publisher =   {Springer},
-  address   =   {Montréal, Canada},
-  month     =   aug,
-  doi       =   {10.1007/978-3-031-37731-0_8},
-}
+
 ```
-
-## Acknowledgments
-
-This work is part of the I+D+i PID2020-118447RA-I00 ([MultiScore](https://sites.google.com/view/multiscore-project)) project, funded by MCIN/AEI/10.13039/501100011033. Computational resources were provided by the Valencian Government and FEDER funding through IDIFEDER/2020/003.
 
 ## License
 This work is under a [MIT](LICENSE) license.
